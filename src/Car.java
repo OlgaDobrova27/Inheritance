@@ -3,6 +3,11 @@ public class Car extends Transport {
     private final float engineVolume;
 
     @Override
+    public void refill(String typeMotor) {
+
+    }
+
+    @Override
     protected void refill(Boolean gasoline, Boolean diesel, Boolean electro) {
         if (gasoline || diesel || electro) {
             statusRefill = "заправлен";
